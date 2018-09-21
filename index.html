@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>InfoVis - UNIFEI</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="http://tableless.github.io/iniciantes/assets/javascripts/prettify/src/prettycss.css">
+    
+
+
+
+  </head>
+  <body>
+    <div class="header">
+      <div class="logoWrap">
+        <div>InfoVis UNIFEI - Prática Harry Potter</div>
+      </div>
+      <div id="harry">
+      </div>
+    </div>
+    <div class="container">
+      <h1>Links Úteis</h1> 
+      <p>D3.js: <a href="https://d3js.org/">https://d3js.org/</a></p>
+      <p>CodeAnywhere <a href="https://codeanywhere.com">https://codeanywhere.com</a></p>
+      <p>Dados do Harry Potter: <a href="http://hp-api.herokuapp.com/api/characters">http://hp-api.herokuapp.com/api/characters</a></p>
+      <h1>Chamada da Biblioteca javascript D3.js </h1>
+      <pre class="lang-html prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"https://d3js.org/d3.v5.min.js"</span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span></li></ol></pre>
+      <h1>
+        BORA LÁ?!
+      </h1>
+      <h1>Estrutura Básica de HTML </h1>
+        <p>O código abaixo apresenta uma estrutura básica para inicio de programação em HTML</p>
+        <pre class="lang-html prettyprint linenums"><ol class="linenums"><li class="L0"><span class="dec">&lt;!DOCTYPE html&gt;</span></li><li class="L1"><span class="tag">&lt;html</span><span class="pln"> </span><span class="atn">lang</span><span class="pun">=</span><span class="atv">"pt-br"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;head&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;title&gt;</span><span class="pln">Título da página</span><span class="tag">&lt;/title&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">  </span><span class="tag">&lt;/head&gt;</span></li><li class="L6"><span class="pln">  </span><span class="tag">&lt;body&gt;</span></li><li class="L7"><span class="pln">    Aqui vai o código HTML que fará seu site aparecer.</span></li><li class="L8"><span class="pln">  </span><span class="tag">&lt;/body&gt;</span></li><li class="L9"><span class="tag">&lt;/html&gt;</span></li></ol></pre>
+      <h1>
+        Captura de Dados
+      </h1>
+      <pre class="lang-html prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">d3.json("https://hp-api.herokuapp.com/api/characters").then(function(data) {
+     console.log(data);
+   });</span></li></ol></pre>
+      
+       <h1>
+        Limpeza de Dados
+      </h1>
+      <pre class="lang-html prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">function isBigEnough(value) {
+  return value >= 10;
+}
+
+var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
+   });</span></li></ol></pre>
+
+
+
+    </div> 
+ 
+      </body>
+      
+</html>
+<!-- 
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/vis.css">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="js/vis.js"></script>
+  </head>
+  <body>
+    <div class="chart"></div>
+
+  </body>
+</html> -->
